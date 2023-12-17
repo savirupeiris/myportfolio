@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200;400;500;600;700&family=Teko:wght@500&family=Young+Serif&display=swap" 
+    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <title>Contact Me</title>
+</head>
+<body>
+    <header class="header1">
+        <div class="bx bx-menu" id= "menu-icon"></div>
+    <nav>
+        <ul class="navbar">
+            <li><a href="HomePage.html">Home</a></li>
+            <li><a href="AboutMe.html">About Me</a></li>
+            <li><a href="Project & Blogs.html">Blogs</a></li>
+            <li><a href="ContactMe.html">Contact</a></li>
+        </ul>
+    </nav>
+   </header>
+
+</header>
+<p class="p1"></p>
+<section id="ContactMe">
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title1">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>savirumeth11@gmail.com</p>
+                    <p><i class="fas fa-phone-alt"></i>+94 71 581 5039</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/saviru-peiris-799668256/"><i class="fab fa-linkedin-in"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Full Name" required>
+                        <input type="email" name="email" placeholder="Email" class="NewEmail" required>
+                        <input type="text" name="Subject" placeholder="Contact Number" required>
+                        <input type="text" name="Name" placeholder="Country" required>
+                        <textarea name="Message"  rows="6" placeholder="Message..." required></textarea>
+                        <button type="submit" class="btn2"><span>Submit</span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fas fa-copyright"></i> Made By Saviru Peris .<a href=
+                "https://www.espncricinfo.com/cricketers/saviru-peiris-1326007" target="_top" alt="scores"> 
+                ESPN CricInfo</a></p>
+        </div>
+    </div>
+</section>
+<script>
+    const header = document.querySelector("header");
+    window.addEventListener("scroll",function(){
+        header.classList.toggle("sticky",window.scrollY>0);
+    })
+    
+    let menu=document.querySelector('#menu-icon');
+    let navbar=document.querySelector('.navbar');
+    
+    menu.onclick=() =>{
+        menu.classList.toggle('bx-x');
+        navbar.classList.toggle('open');
+    };
+    
+    window.onscroll=()=>{
+        menu.classList.remove('bx-x');
+        navbar.classList.remove('open');
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200;400;500;600;700&family=Teko:wght@500&family=Young+Serif&display=swap" 
+    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <section>
+    <div id="header">
+        <div class="container">
+            <header class="header1">
+                <div class="bx bx-menu" id= "menu-icon"></div>
+            <nav>
+                <ul class="navbar">
+                    <li><a href="HomePage.html">Home</a></li>
+                    <li><a href="AboutMe.html">About Me</a></li>
+                    <li><a href="Project & Blogs.html">Blogs</a></li>
+                    <!-- <li><a href="#">Portfolio</a></li> -->
+                    <li><a href="ContactMe.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+            <div class="header-text">
+                <p>Professional Cricketer 🇱🇰</p>
+                <div class="txt-overflow" style="text-overflow: ellipsis;">Software Developer</div>
+
+                <h1>Hi, I'm <span>Saviru Peiris</span><br> from Sri Lanka</h1>
+            </div>
+            <br><br><br>
+            <button onclick="window.location.href='https://www.linkedin.com/feed/'" class="button"><span>Let's Connect</span></button>
+        </div>
+    </div>
+</section>
+
+<!-- -------------Potfolio-------------------------- -->
+        <section>
+        <div class="services" id="services">
+            <div id="portfolio">
+                <h1 class="sub-title" id="Blogs">More<span> Specifics</span></h1>
+                <div class="services-list">
+                    <div class="project-div">
+                        <i class='bx bx-code' style='color: #00eeff;'></i>
+                        <h2>Blogs</h2>
+                        <p>
+                            In my journey as a blogger, I've explored a multitude of topics, sharing insights, knowledge, and experiences 
+                            with a global audience. From the realms of technology and science to the intricacies of travel and personal growth, 
+                            my blogs have been a platform for thought-provoking discussions and meaningful storytelling. Each piece is crafted with 
+                            a blend of research, creativity, and a passion for delivering content that informs, inspires, and engages readers. It's 
+                            been a rewarding endeavor that has not only allowed me to express my thoughts but also to connect with an ever-expanding 
+                            community of like-minded individuals. The world of blogging has been a captivating adventure, and I look forward to 
+                            continuing this journey of exploration and expression in the digital realm.</p>
+                        <a href="Project & Blogs.html" class="read">Read More</a>
+                    </div>
+                    <div class="project-div">
+                        <i class='bx bx-code' style='color: #00eeff;'></i>
+                        <h2>Projects</h2>
+                        <p>My portfolio is a blend of thought-provoking blogs and exciting projects. 
+                            I'm a passionate writer who enjoys sharing insights on a variety of topics, 
+                            from technology trends to travel adventures. My blogs aim to inform, entertain, 
+                            and inspire. On the other hand, my projects showcase my technical skills and 
+                            creativity. My work reflects a commitment to both writing engaging content and
+                            bringing innovative ideas to life through hands-on projects. Explore my portfolio to 
+                            discover a fusion of words and code that illustrates my journey and expertise.
+                            Explore for more. I have started all my projects since <time datetime="2020-02-14T 10:00:00:00">January 2020.</time>
+                        </p>
+                            <a href="Project & Blogs.html" class="read">Read More</a>
+                    </div>
+                    <div class="project-div">
+                        <i class='bx bx-code' style='color: #00eeff;'></i>
+                        <h2>Certificates</h2>
+                        <p>In my pursuit of lifelong learning and professional development, I have enriched my skill set through a variety of courses 
+                            on platforms like Coursera and Udemy. These online learning experiences have provided me with valuable certificates that 
+                            attest to my commitment to continuous education and expertise in diverse subjects. From data science and digital marketing 
+                            to web development and leadership, I've delved into a wide range of courses to keep my knowledge current and relevant in an 
+                            ever-changing landscape. These certificates not only serve as a testament to my dedication to self-improvement but also 
+                            empower me to take on new challenges and contribute effectively to projects in an evolving digital world. I'm proud of the 
+                            knowledge I've gained through these platforms and am excited to apply it to future endeavors.</p>
+                            <a href="AboutMe.html" class="read">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<section>
+        <div class="copyright">
+            <p>Copyright <i class="fas fa-copyright"></i> Made By Saviru Peris .<a href=
+                "https://www.espncricinfo.com/cricketers/saviru-peiris-1326007" target="_top" alt="scores"> 
+                ESPN CricInfo</a></p>
+        </div>
+    </div>
+</section>
+<script>
+    const header = document.querySelector("header");
+    window.addEventListener("scroll",function(){
+        header.classList.toggle("sticky",window.scrollY>0);
+    })
+    
+    let menu=document.querySelector('#menu-icon');
+    let navbar=document.querySelector('.navbar');
+    
+    menu.onclick=() =>{
+        menu.classList.toggle('bx-x');
+        navbar.classList.toggle('open');
+    };
+    
+    window.onscroll=()=>{
+        menu.classList.remove('bx-x');
+        navbar.classList.remove('open');
+    }
+    </script>
+</body>
+</html>

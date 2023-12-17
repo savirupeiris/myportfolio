@@ -1,0 +1,1082 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family:'Popins',sans-serif;
+    box-sizing: border-box;
+}
+:root{
+    --bg-color:#fff;
+    --text-color:#221314;
+    --second-color:#5a7184;
+    --main-color:#6e54fa;
+    --big-font:6rem;
+    --h2-font:3rem;
+    --p-font:1.1rem;
+}
+@font-face {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* src: url(https://www.espncricinfo.com/cricketers/saviru-peiris-1326007); */
+    src:url();
+}
+body{
+    background:#000000;
+    color: #fff;
+}
+a[target]{
+    background-color: rgb(196, 31, 47);
+    text-decoration: none;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(151, 225, 240);
+    box-shadow: 2px 1px;
+}
+a[target]:hover{
+    background-color: rgb(196, 31, 47);
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 213, 255);
+}
+a[target]::after{
+    background-color: rgb(196, 31, 47);
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 85, 0);
+}
+.top-heading span{
+    color: #ff004f;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+
+}
+.button{
+    /* background-color: #6f1e37; */
+    background-color: #380000e3;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bolder;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 6px;
+    border-color: chartreuse;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    padding: 10px 30px;
+    transition:0.5s;
+    cursor: pointer;
+}
+.button:hover{
+    box-shadow: 0 0 5px cyan,
+                0 0 25px cyan,
+                0 0 50px cyan,
+                0 0 100px cyan,
+                0 0 200px cyan;
+}
+.button:hover:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+.button span{
+    font-weight:bolder;
+    color: white;
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(Images/SaviruImage.jpg);
+    background-size: 40%; /* Adjust this value to control the size (50% makes it 50% of the container's width) */
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-color: your-color; /* Replace 'your-color' with a valid color code or name */
+}
+.container{
+    padding: 30px 5%;
+}
+
+ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove any default padding */
+    text-align: right; /* Align text to the right */
+    margin-left: 60px;
+}
+
+li {
+    display: inline; /* Display list items inline to align them horizontally */
+    margin-left:80px; /* Add some space between the list items */
+
+}
+nav li{
+    margin: 0px 15px;
+    text-align: center;
+}
+nav a{
+    padding: 15px;
+    text-align: center;
+
+}
+
+ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 30px 30px;
+    /* background: linear-gradient(to right,rgba(blue,yellow,red)); */
+}
+
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative; /* Add relative positioning to the anchor element */
+}
+
+nav ul li a::after {
+    content: '';
+    width:0px;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0px;
+    bottom: 6px;
+    transition: width 0.8s; /* Apply the transition to the 'width' property */
+}
+nav ul li a:hover{
+    color: #ec6666;
+    opacity: 0.2s;
+    transition: 1s;
+}
+
+
+nav ul li a:hover::after {
+    width: 100%; /* Increase the width to create the underline effect */
+}
+
+.header-text{
+    margin-top: 15%;
+    font-size: 25px;
+}
+.header-text h1{
+    font-size: 70px;
+    margin-top: 20px;
+}
+
+.header-text h1 span{
+    color: #ff004f;
+    transform: translateX(-5px);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.header-text h1 span:hover{
+    color: #909090;
+    opacity: 0.2s;
+    transition: 1s;
+}
+
+/* --------------------About ----------------------------*/
+#about{
+    padding: 80px 0px;
+    color:#ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: -20px;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width:100%;
+    height: 90%;
+    margin-top: 45px;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.font-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+}
+.paragraph1{
+    padding-top: 20px;
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+.paragraph1::first-letter{
+    font-size:45px ;
+    color:rgb(255, 86, 86);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+.paragraph1 span{
+    color: #ff2167;
+}
+.tab-class{
+    display: flex;
+    margin:20px 0px 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Teko', sans-serif;
+    font-family: 'Young Serif', serif;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-links::after{
+    width: 50%;
+}
+.education{
+    font-size: 20px;
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.education:hover{
+    color:#e85a87;
+    opacity: 0.2s;
+    transition: 0.4s;
+}
+.para2{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+.experience{
+    font-size: 20px;
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+}
+.experience:hover{
+    color:#e85a87;
+    opacity: 0.2s;
+    transition: 0.4s;
+}
+.horiline{
+    background-color: #ff004f;
+    height: 2px;
+}
+
+.para3{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+#grad1{
+    height: 2px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(red, rgb(108, 144, 108));
+}
+p:empty{
+    height: 2px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(red, rgb(108, 144, 108));
+}
+/* --------------------Portfolio-------------------------- */
+#portfolio{
+    padding: 10px 0px;
+    /* color:#ababab; */
+}
+.services{
+    margin-left: 100px;
+}
+#services{
+    color: aliceblue;
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+    font-family:'Times New Roman', Times, serif
+}
+.potfolio{
+    padding: 90px;
+    padding-top: 80px;
+}
+.sub-title{
+    text-align: center;
+    font-size: 80px;
+    padding-bottom: 70px;
+    margin-top: 20px;
+    margin-left: -65px;
+    padding-top: 50px;
+    padding-bottom: 2px;
+}
+.sub-title span{
+    color: #fcfcfc;
+    text-align: center;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(50px,1fr));
+    grid-gap: 60px;
+    margin-top: 30px;
+    margin-left:-33px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+    height:50%;
+    width: 100%; 
+}
+.services-list div{
+    background-color: transparent;
+    padding: 40px;
+    margin-left: -10px;
+    font-size: 13px;
+    font-weight: 13px;
+    border-right: 10px;
+    border-radius: 20px;
+    transition: background-color 0.5s,transform 0.5s;
+    box-shadow: 1px 1px 20px #d83737f7,
+                1px 1px 40px #0053b8f7;
+}
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.services-list div h2{
+    text-shadow: 2px 2px 4px #ffffff;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.services-list div a{
+    text-decoration:none;
+    color: rgb(239, 239, 239);
+    font-size: 17px;
+    font-weight: bolder;
+    font-family: 'Source Code Pro', monospace;
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 10px 10px 10px;
+    border-color:yellow;
+    color: rgb(5, 171, 242);
+    
+}
+.services-list p{
+    text-align: justify;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight:10px;
+}
+.project-div{
+    margin-bottom: 2px;
+    height: 97%;
+}
+.read{
+    text-decoration:none;
+    color: rgb(239, 239, 239);
+    font-size: 17px;
+    font-weight: bolder;
+    font-family: 'Source Code Pro', monospace;
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 10px 10px 10px;
+    border-color:yellow;
+    color: rgb(5, 171, 242);
+}
+.read:hover{
+    box-shadow: 0 0 5px cyan,
+                0 0 25px cyan,
+                0 0 50px cyan,
+                0 0 100px cyan,
+                0 0 200px cyan;
+}
+.services-list div:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+
+
+/* --------------------Contact Me-------------------------- */
+.sub-title1{
+    font-size: 75px;
+    padding-top: 140px;
+}
+.contact-left{
+    flex-basis: 35%;
+    text-align: left;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.btn2{
+    background-color: #6f1e37;
+    margin-top: 15px;
+    padding-top: 30px;
+    margin:5px;
+    padding:  10px 10px 10px 10px;
+    box-sizing:content-box;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 6px;
+    border-color: rgb(12, 18, 5);
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    padding: 6px;
+    transition:0.5s;
+    cursor: pointer;
+    padding: 10px 10px;
+
+}
+.btn2:hover{
+    background-color: rgba(154, 77, 83, 0.867);
+    opacity: 0.2s;
+    transition: 0.4s;
+    transform: rotateY('angle');
+    
+    
+}
+.btn2 span{
+    color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font: size 20px;
+    
+}
+.contact-right form{
+    width: 100%;
+    padding-top: 63px;
+}
+.contact-right form ::placeholder{
+    color: #000000;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+form input, form textarea{
+    width: 95%;
+    border: 0;
+    outline:none;
+    background: #eae6e6;
+    padding: 15px;
+    margin: 15px 0;
+    color: #050000;
+    font-size: 18px;
+    border-radius: 3px;
+}
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 20px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 25px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+}
+.social-icons a:hover{
+    color: #ff004f;
+    opacity: 0.2s;
+    transition: top 0.4s;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background: #670020;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.copyright i{
+    color: #6d8f77;
+}
+a[target="_top"]{
+    background-color: rgb(58, 104, 51);
+    text-decoration:none;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(151, 225, 240);
+    box-shadow: 2px 1px;
+}
+
+/* ------------------------Blog.html--------------------------- */
+.sub-title-1{
+    font-size: 80px;
+    text-align: center;
+    padding-bottom: 70px;
+    margin-top: 20px;
+    margin-left: -65px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.services-list-1 h2{
+    text-shadow: 2px 2px 4px #fffefe;
+}
+.services-list-1 h2:hover{
+    color: rgb(203, 170, 239);
+    opacity: 0.2s;
+    transition: 0.7s;
+}
+/* .h2-1{
+    font-size: 30px;
+    font-weight: 800px;
+    margin-bottom: -2px;
+} */
+.services-1{
+    margin-left: 100px;
+}
+#services-1{
+    color: aliceblue;
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+    font-family:'Times New Roman', Times, serif
+}
+.services-list-1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(50px,1fr));
+    grid-gap: 60px;
+    margin-top: 30px;
+    margin-left:-33px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+    height:50%;
+    width: 100%; 
+    /* cursor: pointer; */
+}
+.services-list-1 div:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+.project-div:has(img){
+    margin-left: -10px;
+    border-radius: 10px;
+    border: 5px double #730058f7;
+}
+.project-div-1:has(img){
+    margin-left: -10px;
+    border-radius: 10px;
+    border: 5px double #730058f7;
+}
+a >i{
+    color: #beb7ff;
+}
+
+.blog-img{
+    margin-left: -10px;
+    border-radius: 10px;
+    border: 5px double #730058f7;
+}
+.services-list-1 div{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    padding: 60px;
+    margin-left: -10px;
+    font-size: 14px;
+    font-weight: 13px;
+    border-right: 10px;
+    border-radius: 20px;
+    transition: background-color 0.5s,transform 0.5s;
+    box-shadow: 1px 1px 20px #d83737f7,
+                1px 1px 40px #0053b8f7;
+    cursor: pointer;
+}
+.services-list-1 div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.services-list-1 h2{
+    font-size: 32px;
+    font-weight: 500px;
+    margin-bottom: 15px;
+    margin-top: -35px;
+}
+.services-list-1 p{
+    padding-top: 30px;
+    text-align: justify;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight:10px;
+}
+.para1-git1{
+    word-break: keep-all;
+}
+.para1-cert::first-letter{
+    font-size:22px ;
+    color:rgba(237, 230, 230, 0.837);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+
+/* Todo.html */
+table{
+    margin: auto;
+    border:solid gray;
+    width: 96%;
+    height:180px;
+}
+table,tr{
+    height: 50px;
+    background: #670020;
+}
+.first-row{
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: #752f45;
+    text-align: center;
+    color: white;
+}
+.font-color{
+    color: rgb(40, 15, 15);
+}
+
+tr{
+    font-size: 1rem;
+    background-color: rgb(122, 198, 224);
+}
+tr,td{
+    padding: 8px;
+    text-align: justify;
+}
+.link a{
+    text-decoration: none;
+    color: rgb(13, 6, 6);
+    font-weight: bold;
+}
+
+address::before{
+    content: '\2709';
+}
+tr td:first-of-type{
+    background-color:lightblue;
+}
+/*Negation Pseudo Class*/
+
+/* The CSS rule td:first-of-type:not(colspan)::first-letter targets the first letter of the content in the first <td> (table cell) of each row where the 
+first <td> is not a colspan (colspan attribute is not applied). */
+
+td:first-of-type:not(colspan)::first-letter{
+    background-color:lightblue;
+    font-size:20px;
+    color: black;
+    font-weight: bold
+}
+
+/* IMPORTANT/ */
+tr:nth-child(even){
+    background-color: #f2f2f2;
+    padding-left: 10px;
+}
+[data-priority="1"]{
+    background-color: #53b84e;
+}
+[data-priority="2"]{
+    background-color: #9596d2;
+}
+[data-priority="3"]{
+    background-color: #ae9548;
+}
+[data-priority="4"]{
+    background-color: #e3b5b5;
+}
+
+/* Creating Media Queries */
+/* Media Queries for Blog.html */
+@media (max-width: 800px) {
+    .blog-img {
+        max-width: 100%;
+        height: auto;
+    }
+    .services-list-1 {
+        display: flex;
+        flex-direction: column; /* Change to a column layout for smaller screens */
+    }
+    .project-div-1 {
+        width: 100%; /* Ensure the entire box is 100% width */
+        margin: 10px 0px;
+    }
+
+    .project-div-1 p {
+        max-width: 100%; /* Allow paragraphs to adjust to the box width */
+        overflow: hidden;
+        padding: 10px; /* Add padding to keep the text within the box */
+    }
+    .project-div-1 h2 {
+        margin-top: 1px; /* Add margin to keep the heading within the box */
+        font-size: 20px; /* Adjust the font size for smaller screens */
+        margin: 2px 0; /* Add margin to keep the headings within the containers */
+        font-size: 18px; /* Adjust the font size for smaller screens */
+        margin: -25px 0 0 0; 
+    }
+    /* Homepage.html */
+    .services-list{
+        display: flex;
+        flex-direction: column; /* Change to a column layout for smaller screens */
+    }
+    .project-div{
+        width: 100%; /* Ensure the entire box is 100% width */
+        margin: 10px 0px;
+    }
+
+    .project-div p{ 
+        max-width: 100%; /* Allow paragraphs to adjust to the box width */
+        overflow: hidden;
+        padding: 10px; /* Add padding to keep the text within the box */
+    }
+    .project-div h2{
+        margin-top: 1px; /* Add margin to keep the heading within the box */
+        font-size: 20px; /* Adjust the font size for smaller screens */
+        margin: 2px 0; /* Add margin to keep the headings within the containers */
+        font-size: 18px; /* Adjust the font size for smaller screens */
+        margin: -25px 0 0 0; 
+    }
+
+
+    .copyright {
+        text-align: center; /* Center-align the copyright text */
+        padding: 10px; /* Add padding for spacing */
+        font-size:12px ;
+    }
+    /* Certificate.html */
+    .para1-cert {
+        max-width: 100%; /* Allow paragraphs to adjust to the box width */
+        overflow: hidden;
+        padding: 10px; /* Add padding to keep the text within the box */
+    }
+     /* Additional CSS for the table to make it responsive */
+     table {
+        width: 90%;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        text-align: left;
+        padding: 8px;
+        font-size: 12px;
+        color: #000000;
+    }
+
+    th {
+        background-color: #a15d5d;
+    }
+    td:first-of-type:not(colspan)::first-letter{
+        font-size: 17px;
+    }
+    /* Contact me */
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .contact-left, .contact-right {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .contact-right form input[type="text"],
+    .contact-right form input[type="email"],
+    .contact-right form input[type="number"],
+    .contact-right form input[type="text"],
+    .contact-right form textarea {
+        width: 160%;
+        margin: 10px 0;
+        padding: 15px;
+    }
+    .contact-left{
+        font-size: 15px;
+    }
+    .sub-title1{
+        font-size: 60px;
+        margin-top: -10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-col-1, .about-col-2 {
+        width: 100%;
+    }
+    
+    .about-col-1, .about-col-2, .paragraph2, .paragraph3 ,.paragraph1{
+        font-size: 13px;
+        padding: 10px;
+    }
+    .font-title{
+        font-size: 40px;
+    }
+    .about-col-1 img {
+        max-width: 100%; /* Set a maximum width to prevent the image from becoming too large */
+        height: auto; /* Maintain the image's aspect ratio */
+        display: block; /* Remove any extra spacing or gaps around the image */
+        margin: 200px auto; /* Center the image horizontally */
+    }
+}
+/* homepage.html heading part */
+@media (max-width: 768px) {
+    .header-text p {
+        font-size: 14px;
+        color: rgba(255,255,255,0.5);
+    }
+    .header-text h1 {
+        font-size: 24px;
+    }
+    .button {
+        font-size: 13px;
+        padding: 5px 5px;
+    }
+    .sub-title{
+        font-size: 40px;
+        margin-top: -200px;
+    }
+    #header{
+        background-size: 55%;
+        margin-top:5px;
+        background-image: url(Images/SaviruImage.jpg);
+        background-position: right top right;
+        margin-top:5px;
+    }
+    .sub-title-1{
+        font-size: 40px;
+    }
+}
+
+/* Navbar */
+#menu-icon{
+    color: var(--bg-color);
+    font-size: 35px;
+    z-index:10001;
+    cursor: pointer;
+    display:none;
+}
+.header1{
+    position:relative;
+    top:2px;
+    left:40px;
+    /* height: 100%; */
+    /* margin-right: 80px; */
+    width:100%;
+    z-index:1000;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: transparent;
+    padding:30px 18%;
+    transition: ease.40s;
+}
+.header1.sticky{
+    background:var(--bg-color);
+    padding: 10px 20%;
+    box-shadow:rgba(33 35 38 0.1) 0px 10px 10px -10px;
+}
+
+.sticky .logo{
+    color: var(--text-color);
+}
+
+.sticky .navbar a{
+    color: var(--text-color);
+}
+.header1{
+    padding:10px;
+}
+.header1 ul{
+    list-style-type: none;
+    margin-left: auto;
+    padding: 5px;
+    text-align: left;
+}
+.header1 li{
+    display: inline;
+    margin: 2px 15px;
+}
+.navbar{
+    display: flex;
+}
+
+.navbar a{
+    color: aliceblue;
+    font-size: var(--p-font);
+    font-weight: 500;
+    padding: 10px 22px;
+    border-radius: 4px;
+    transition: ease .40s;
+}
+
+@media (max-width:1000px){
+    header{
+        padding: 17px 3%;
+        transition: 0.2s;
+    }
+    header.sticky{
+        padding:10px 3%;
+        transition: 0.2s;
+    }
+    section{
+        padding:80px 3%;
+        transition: 0.2s;
+    }
+    :root{
+        --big-font:4.5rem;
+        --h2-font:2.3rem;
+        --p-font:1rem;
+        transition: 0.2s;
+    }
+}
+@media (max-width:420px){
+    #menu-icon{
+        display:block;
+    }
+    .stick #menu-icon{
+        color:var(--text-color);
+    }
+    .home{
+        height: 88vh;
+    }
+    .navbar{
+        position: absolute;
+        top:0;
+        left: 53%;
+        width: 200px;
+        height: 120vh;
+        background: #1f0623;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding:15px 30px;
+        transition: 0.5s all;
+    }
+    .navbar a{
+        display:block;
+        margin: 1.2rem 0;
+    }
+
+    .sticky .navbar a{
+        color: var(--bg-color);
+    }
+
+    .navbar a:hover{
+        color: var(--text-color);
+    }
+    .open{
+        right:0;
+    }
+    .list{
+        width:50%;
+        margin-bottom: 12px;
+    }
+
+}
+/* Animations */
+@keyframes slidedouble{
+0%{
+    transform: translateY(0px);
+}
+50%{
+    transform: translateY(-10px);
+}
+100%{
+    transform: translateY(0px);
+}
+}
+.services-list-1 h2{
+    animation-name: slidedouble;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    transition: all .3s;
+}
+.paragraph1::first-letter{
+    animation-name: slidedouble;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    transition: all .3s;
+}
+.txt-overflow{
+    overflow: hidden;
+    white-space: nowrap; 
+    width: 130px; 
+    overflow: hidden; 
+    border: 1px solid #000000;
+    color: #e3b5b5;
+    font-size: 19px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.txt-overflow:hover{
+    overflow: visible;
+    transition-delay: 2s;
+}
+
+/* Validity Pseudo class */
+
+/* The CSS rule .NewEmail:invalid targets elements with the class NewEmail that are in an invalid state. Typically, this rule is used with form elements,
+such as an input with the NewEmail class that fails validation.  */
+.NewEmail:invalid{
+    background-color: rgb(140, 200, 135);
+    border: 2px solid rgb(179, 90, 90);
+}
+.p1{
+    background-color: rgb(233, 209, 209); /* For browsers that do not support gradients */
+    background-image: radial-gradient(rgb(238, 212, 212), rgb(190, 226, 190));
+    margin-top: 20px;
+    width: 100px;
+    transition-duration: 5s;
+}
+.p1:hover{
+    width: 1480px;
+    height: 6px;
+    transition-delay: 1s;
+    background-color:  rgb(255, 229, 229);
+    cursor: pointer;
+}
+
+/* Nth Pesudo Class */
+/* The CSS rule li:nth-of-type(2) targets the second <li> (list item) in a list and applies a set of styles to it. */
+li:nth-of-type(2){
+    background-color:  #87d684;
+    border: solid 2px rgb(0, 0, 0);
+    border-color:rgb(207, 207, 142);
+    border-radius: 6px;
+    color: rgb(0, 0, 0);
+}
+ @media(max-width: 800px){
+    li:nth-of-type(2){
+        border-width: 2px;
+    }
+ }
+
+time{
+    color: rgb(225, 185, 242);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+    
+    
+
