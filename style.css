@@ -1060,11 +1060,11 @@ such as an input with the NewEmail class that fails validation.  */
 /* Nth Pesudo Class */
 /* The CSS rule li:nth-of-type(2) targets the second <li> (list item) in a list and applies a set of styles to it. */
 li:nth-of-type(2){
-    background-color:  #87d684;
+/*     background-color:  #87d684;
     border: solid 2px rgb(0, 0, 0);
     border-color:rgb(207, 207, 142);
     border-radius: 6px;
-    color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0); */
 }
  @media(max-width: 800px){
     li:nth-of-type(2){
